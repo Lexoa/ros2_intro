@@ -23,10 +23,11 @@ source ~/ros2_ws/install/setup.bash
 ```
 
 ### Goals
+#### Overview
 Try to follow the tutorial on https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html 
 
 You have 3 objectives:
-- Write a subscriber/publisher sending the name of your computer and your domain id.
-- With a other node. Write a service server/client sendind the name of your computer and your domain id and answering if it is the good one.
-- Write a launch file that allow to launch both service client and subscriber, use a parameter to define what are the correct string and the correct number to send to the service client.
+1. Write a subscriber/publisher sending the name of your computer as a string and your domain id as a int.
+2. With another node. Write a service client asking the name of your computer and your domain id and answering if they are the good one.
+3. Write a launch file that allow to launch both service client and publisher, use a parameter to define what are the correct computer name and the correct domain_id.
 
