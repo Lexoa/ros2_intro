@@ -3,12 +3,7 @@ The following information is designed for the use of ROS2 Humble on Ubuntu 22.04
 ## Ressources
 ### Official tutorial
 To help you go through this class you could find support on [official ros2 tutorial](https://docs.ros.org/en/humble/Tutorials.html).
-### Classic ROS2 command
-
-<details>
-  <summary>Click to extend</summary>
-  Hidden message
-</details>
+### Common command lines
 
 
 ## Starting

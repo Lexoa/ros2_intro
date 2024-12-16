@@ -1,0 +1,2 @@
+string computer_name
+int32 domain_id
