@@ -12,5 +12,6 @@ This class is divided into 4 sessions:
 This class will use various ressources:
 - [Official ROS2 tutorial](https://docs.ros.org/en/humble/Tutorials.html)
 - [Turtle bot 3 documentation](https://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/)
+- [ROS2 control documentation](https://control.ros.org/humble/doc/getting_started/getting_started.html)
 - [Moveit documentation](https://moveit.picknik.ai/humble/index.html)
 - [Drone session tutorial](https://github.com/Kariboo-Corp/vol-drone-interieur/tree/main)

@@ -39,10 +39,29 @@ target_include_directories(my_first_subscriber PUBLIC
   ${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp)
 target_compile_features(my_first_subscriber PUBLIC c_std_99 cxx_std_17)
 
+add_executable(my_first_service_server src/my_first_service_server.cpp)
+ament_target_dependencies(my_first_service_server rclcpp my_first_msgs)
+
+target_include_directories(my_first_service_server PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+  ${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp)
+target_compile_features(my_first_service_server PUBLIC c_std_99 cxx_std_17)
+
+add_executable(my_first_service_client src/my_first_service_client.cpp)
+ament_target_dependencies(my_first_service_client rclcpp my_first_msgs)
+
+target_include_directories(my_first_service_client PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+  ${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp)
+target_compile_features(my_first_service_client PUBLIC c_std_99 cxx_std_17)
 
 install(TARGETS
   my_first_publisher
   my_first_subscriber
+  my_first_service_server
+  my_first_service_client
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY include/

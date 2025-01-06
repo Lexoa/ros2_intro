@@ -1,0 +1,6 @@
+string computer_name
+int32 domain_id
+---
+bool check_name
+bool check_id
+bool success
